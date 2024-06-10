@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #083f6c;
+  padding: 10px 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo span {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav {
+  margin-right: auto;
+  margin-left: 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.login-button {
+  background-color: #00d1b2;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+.login-button:hover {
+  background-color: #00a18d;
+}
+.foot-text {
+  background-color: #f0f0f0;
+  padding: 10px 20px;
+}
+
+.foot-text span {
+  color: #083f6c;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column; /* Stack links vertically */
+  }
+
+  .nav-links li {
+    margin: 10px 0; /* Add spacing between links */
+  }
+
+  .login-button {
+    margin-top: 10px; /* Add space between button and links */
+  }
+}
